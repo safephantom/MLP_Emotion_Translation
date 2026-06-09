@@ -1,0 +1,231 @@
+﻿segment_id,sentence_index,sample_id,source_text,emotion,valence,arousal,ef_info,split
+Sess20_script06_F001,1,Sess20_script06_F001_sent1,-,surprise,2.0,3.4,,val
+Sess19_script05_F006,1,Sess19_script05_F006_sent1,-ݾ; -,fear,1.7,4.3,ݾ; ,val
+Sess17_impro02_F013,1,Sess17_impro02_F013_sent1,저 여기 주방장님 오시기 전까지 제가 여기 주방장이었어요.,anger,1.7,4.0,어요,val
+Sess17_script01_M014,1,Sess17_script01_M014_sent1,-,surprise,4.0,3.6,,val
+Sess18_script02_M015,2,Sess18_script02_M015_sent2,빨리 병원 가자니까.,anger,1.7,4.7,자니까,val
+Sess19_script05_M028,1,Sess19_script05_M028_sent1,-,surprise,1.9,3.9,?,val
+Sess17_impro04_F012,2,Sess17_impro04_F012_sent2,윤찬 대리 이제 제가 해드릴 건 없네요.,anger,2.0,3.0,네요,val
+Sess20_script06_M007,1,Sess20_script06_M007_sent1,-; -,surprise,1.5,4.6,; ,val
+Sess19_script04_M021,1,Sess19_script04_M021_sent1,미안해 사실 이번에도 월급을 못 받았어.,sadness,3.0,2.6,어 | 어,val
+Sess19_impro04_F022,1,Sess19_impro04_F022_sent1,왜 내가 그렇게 걱정됐어?,happiness,4.2,3.4,어,val
+Sess18_script05_M001,1,Sess18_script05_M001_sent1,-,surprise,2.2,2.7,,val
+Sess19_impro02_M010,2,Sess19_impro02_M010_sent2,이제와서 추가 비용이 좀 나왔으니까 저보고 독박쓰라는 (거죠),anger,2.6,3.7,죠,val
+Sess19_impro04_M029,1,Sess19_impro04_M029_sent1,아 몰라.,happiness,3.0,3.0,어,val
+Sess17_impro01_F032,2,Sess17_impro01_F032_sent2,엄마가 맛있는 김치찌개 해줄게.,sadness,4.2,3.3,ᆯ게,val
+Sess20_script06_M008,1,Sess20_script06_M008_sent1,-; -ݾ,surprise,1.9,3.8,; ݾ,val
+Sess20_script01_F015,1,Sess20_script01_F015_sent1,사실 우리 아빠도 나랑 똑같은 병이었어.,sadness,1.7,2.7,어,val
+Sess19_script02_F009,1,Sess19_script02_F009_sent1,이미 늦었어.,sadness,2.0,1.9,어,val
+Sess18_impro03_M013,2,Sess18_impro03_M013_sent2,아 그니까 뭐 왜 그럼 한 번 드셔보세요.,anger,1.8,4.0,세요,val
+Sess20_script06_F005,1,Sess20_script06_F005_sent1,-,surprise,1.9,3.3,,val
+Sess18_script03_F010,1,Sess18_script03_F010_sent1,-; -; -,surprise,3.9,4.1,; ; ,val
+Sess20_impro01_F022,2,Sess20_impro01_F022_sent2,그래서 그랬구나.,happiness,4.1,3.2,구나,val
+Sess19_script02_M010,2,Sess19_script02_M010_sent2,농담하는 거지?,sadness,2.6,3.5,지,val
+Sess18_script03_M012,1,Sess18_script03_M012_sent1,-; -,surprise,4.4,4.6,; ,val
+Sess18_script05_F005,1,Sess18_script05_F005_sent1,-,surprise,1.9,3.4,,val
+Sess18_impro01_F032,1,Sess18_impro01_F032_sent1,역시 내 남편 밖에 없다.,happiness,4.5,3.4,다,val
+Sess18_impro03_F016,2,Sess18_impro03_F016_sent2,(아무튼+지금) 일부로 꼬투리 잡는 거 같은데.,anger,1.8,4.5,은데,val
+Sess20_impro04_F021,1,Sess20_impro04_F021_sent1,근데 너가 있어서 견뎠어.,sadness,2.5,2.2,어,val
+Sess18_script03_M017,2,Sess18_script03_M017_sent2,뭐야?,happiness,5.0,5.0,야,val
+Sess20_script02_M013,1,Sess20_script02_M013_sent1,야 잠깐만 야 마지막 하나 야 마지막 하나 제발.,happiness,4.9,4.5,야,val
+Sess17_impro03_M032,1,Sess17_impro03_M032_sent1,(이쁘게 하냐+아이 몰라 빨리 들어가서) 자 이제.,happiness,4.3,3.4,냐 | 어,val
+Sess18_script02_M017,1,Sess18_script02_M017_sent1,-; -ݾ,surprise,2.0,3.8,; ݾ,val
+Sess17_impro04_F025,1,Sess17_impro04_F025_sent1,-,fear,1.6,4.4,,val
+Sess19_impro04_M026,2,Sess19_impro04_M026_sent2,죽을까 봐.,happiness,4.1,3.6,어,val
+Sess19_impro02_F025,1,Sess19_impro02_F025_sent1,내 얘기 좀 들어보라니까.,anger,2.1,4.4,라니까,val
+Sess19_impro02_F013,2,Sess19_impro02_F013_sent2,말이 좀 심하네.,anger,2.2,3.2,네,val
+Sess17_script01_M025,1,Sess17_script01_M025_sent1,1억이라 오케이 돈 찾으면 내가 바로 현금으로 줄게.,happiness,3.9,3.8,ᆯ게,val
+Sess17_impro01_F023,2,Sess17_impro01_F023_sent2,근데 사랑이 계속 달콤할 수만은 없는 거야.,sadness,2.6,2.7,야,val
+Sess20_script03_F029,1,Sess20_script03_F029_sent1,근데 이제 그만 만나고 같이 살아야겠어.,happiness,4.2,3.6,어,val
+Sess17_script05_M011,1,Sess17_script05_M011_sent1,b/ 그래 야 고라니였나 보다 그치?,happiness,4.6,4.2,다,val
+Sess17_script02_F020,1,Sess17_script02_F020_sent1,n/ 당신 우리 애들 잘 부탁해.,sadness,2.0,2.1,어,val
+Sess19_impro04_M033,1,Sess19_impro04_M033_sent1,사랑한다고.,happiness,3.4,2.7,ᆫ다고,val
+Sess19_script02_F019,1,Sess19_script02_F019_sent1,(해+나도) 살고 싶어.,sadness,1.6,3.7,어,val
+Sess17_script02_M009,1,Sess17_script02_M009_sent1,아니 자기 지금 무슨 소리야.,sadness,2.4,3.2,야,val
+Sess17_script05_M034,1,Sess17_script05_M034_sent1,-,fear,1.5,3.2,,val
+Sess19_script03_F018,1,Sess19_script03_F018_sent1,(안돼+알았어) 걱정하지마.,happiness,4.4,3.8,어 | 어 | 어,val
+Sess20_script02_F018,1,Sess20_script02_F018_sent1,나 오빠 o/ 사랑하는 거 알지?,happiness,4.7,4.7,지,val
+Sess20_script01_M014,2,Sess20_script01_M014_sent2,요즘 의사들 돌팔이들 많다잖아 아닐 수도 있어 응?,sadness,1.9,3.0,다잖아 | 어,val
+Sess17_script01_F008,1,Sess17_script01_F008_sent1,-,disgust,1.8,3.9,,val
+Sess20_script01_M023,1,Sess20_script01_M023_sent1,도대체 무슨 소리 하는거야.,sadness,1.5,3.7,야,val
+Sess17_script05_M009,1,Sess17_script05_M009_sent1,-; -ݾ,fear,1.9,3.9,; ݾ,val
+Sess19_impro01_F019,2,Sess19_impro01_F019_sent2,오늘 가장 슬픈 건 널 테니까.,sadness,3.3,2.5,니까,val
+Sess20_impro01_F017,1,Sess20_impro01_F017_sent1,알았어.,happiness,4.0,3.4,어,val
+Sess19_script05_M026,1,Sess19_script05_M026_sent1,이대로 가면 돼.,happiness,3.7,4.2,어,val
+Sess20_script06_M007,1,Sess20_script06_M007_sent1,-; -,fear,1.5,4.6,; ,val
+Sess18_script03_F009,1,Sess18_script03_F009_sent1,어이구 퍽이나 좋겠다.,happiness,2.2,2.9,다,val
+Sess20_impro01_M025,1,Sess20_impro01_M025_sent1,뭐 하는 거야.,happiness,3.6,2.9,야,val
+Sess17_script01_F013,1,Sess17_script01_F013_sent1,-; -,surprise,4.3,4.3,; ?,val
+Sess18_script03_F020,1,Sess18_script03_F020_sent1,지금 전화 걸게 나 친구들 진짜 (많아),happiness,4.3,4.2,ᆯ게 | 어,val
+Sess19_impro03_M022,1,Sess19_impro03_M022_sent1,아니 제가 좀 도와줄려고 하는 거잖아요.,anger,3.1,3.4,잖아요,val
+Sess19_impro03_F016,1,Sess19_impro03_F016_sent1,그래요 뭐 대단 당신 뭐 대단한 뭐 그런 사람인 거 알겠어요.,anger,1.8,4.2,어요 | 어요,val
+Sess18_script05_M009,1,Sess18_script05_M009_sent1,-,fear,1.8,3.8,,val
+Sess17_script05_F004,1,Sess17_script05_F004_sent1,-; -,surprise,2.1,3.6,; ,val
+Sess19_script02_M017,1,Sess19_script02_M017_sent1,-; -ݾ,surprise,2.0,3.5,; ݾ,val
+Sess19_impro03_F026,1,Sess19_impro03_F026_sent1,나 오늘부로 요리 그만둘 테니까 당신 알아서 잘해 봐.,anger,1.4,5.0,어,val
+Sess17_script01_M024,1,Sess17_script01_M024_sent1,진작에 그럴 것이지.,happiness,4.4,3.8,지,val
+Sess20_impro03_M013,2,Sess20_impro03_M013_sent2,지금 전무님이 그럼 이거 n/ 그린 그림이에요?,anger,1.9,3.8,에요,val
+Sess20_impro04_F020,1,Sess20_impro04_F020_sent1,나도 그때 그랬다.,sadness,2.3,2.0,다,val
+Sess19_script05_M029,1,Sess19_script05_M029_sent1,-,fear,1.9,4.0,,val
+Sess17_script05_M015,1,Sess17_script05_M015_sent1,-; -,fear,1.9,3.7,; ,val
+Sess18_script06_F017,1,Sess18_script06_F017_sent1,저 원래 면접 이런 식으로 봐요?,anger,1.9,3.6,어요,val
+Sess17_impro02_F007,1,Sess17_impro02_F007_sent1,-,disgust,2.1,3.0,,val
+Sess19_impro04_M026,1,Sess19_impro04_M026_sent1,그건 맞지.,happiness,4.1,3.6,지,val
+Sess17_impro01_F023,1,Sess17_impro01_F023_sent1,b/ 그래 엄마가 사랑이 뭔진 잘 모르겠는데 나도 아버지 돌아가시고 나서 사랑이 뭔지 모르겠어.,sadness,2.6,2.7,어,val
+Sess20_script03_F020,1,Sess20_script03_F020_sent1,-; -ݾ,surprise,3.0,3.5,; ݾ,val
+Sess17_script05_M013,1,Sess17_script05_M013_sent1,-ݾ; -,fear,2.6,3.7,ݾ; ,val
+Sess18_impro04_F017,2,Sess18_impro04_F017_sent2,너 오늘 진짜 힘들겠다.,sadness,3.1,1.9,다,val
+Sess19_script05_F009,1,Sess19_script05_F009_sent1,-; -,surprise,2.3,4.2,; ,val
+Sess17_impro01_F030,1,Sess17_impro01_F030_sent1,b/ 고마워 아들.,sadness,3.6,3.0,어,val
+Sess20_impro02_F020,1,Sess20_impro02_F020_sent1,내가 여기서 땀 흘리고 피 흘린 게 얼만데 어?,anger,1.6,4.1,ᆫ데,val
+Sess18_script05_F013,1,Sess18_script05_F013_sent1,왜 이래?,anger,1.5,4.4,어,val
+Sess19_impro03_F020,1,Sess19_impro03_F020_sent1,당신이 뭔데 지금 여기서 이러고 있는 거에요?,anger,2.0,4.3,에요,val
+Sess20_impro03_M012,1,Sess20_impro03_M012_sent1,(하면서 아주+잠깐만 지금) 뭐라고 하셨어요?,anger,2.0,3.8,어요,val
+Sess19_impro02_F011,2,Sess19_impro02_F011_sent2,대리님이 책임자 아닌가요?,anger,2.2,3.6,ᆫ가요,val
+Sess18_script05_M029,1,Sess18_script05_M029_sent1,-,surprise,1.8,3.9,,val
+Sess19_script04_M029,2,Sess19_script04_M029_sent2,아 너 돈 없잖아?,happiness,3.9,3.4,잖아,val
+Sess20_script01_M024,2,Sess20_script01_M024_sent2,b/ 제발 살아줘 응?,sadness,1.6,2.9,어,val
+Sess18_script03_F008,1,Sess18_script03_F008_sent1,-; -,disgust,1.8,4.2,; ,val
+Sess19_impro01_M015,1,Sess19_impro01_M015_sent1,그냥 좋아하는 사람이 없어졌을 뿐인데 내 주위엔 아무도 없는 거 같고 그냥 너무 외롭고 그냥 오직 내 편이었던 사람이 사라진 거 같아.,sadness,1.4,1.9,어,val
+Sess20_script06_F019,1,Sess20_script06_F019_sent1,-,surprise,1.5,4.5,,val
+Sess20_script06_M005,1,Sess20_script06_M005_sent1,-; -; -,fear,1.7,4.0,; ; ,val
+Sess17_impro02_M015,1,Sess17_impro02_M015_sent1,(아 오케+사람이) 됐어요.,anger,1.8,3.8,어요,val
+Sess19_script03_M027,1,Sess19_script03_M027_sent1,내일 날 밝으면 이제 고주홍의 시대가 열린다 이거야.,happiness,4.9,4.7,ᆫ다 | 야,val
+Sess18_script02_F020,4,Sess18_script02_F020_sent4,b/ 예쁜 모습 좋은 모습만 남기고 싶어.,sadness,1.3,2.9,어,val
+Sess20_script06_M009,1,Sess20_script06_M009_sent1,-,fear,2.0,3.1,,val
+Sess19_impro01_F015,1,Sess19_impro01_F015_sent1,아 난 또 김 부장 얘긴 줄 알고 맨날 너가 그러니까 그냥 그러려니 했지.,sadness,2.7,3.5,지,val
+Sess20_impro03_M024,1,Sess20_impro03_M024_sent1,그리고 제대로 한 번 붙어봐요.,anger,2.5,4.4,어요,val
+Sess17_script06_F021,1,Sess17_script06_F021_sent1,-,surprise,3.6,3.5,,val
+Sess20_impro04_M019,2,Sess20_impro04_M019_sent2,그냥 누군가가 내 말 들어주면은 좋겠다 이런 생각 밖에 없었고.,sadness,2.1,1.8,다,val
+Sess20_script01_F017,1,Sess20_script01_F017_sent1,b/ 아냐 어차피 안되는 일인데 나 어차피 못 사는데 실날 같이 목숨 붙잡아 두구 본인두 힘들고 주위 사람두 힘들게 하고 싶지가 않아.,sadness,1.3,3.2,어,val
+Sess17_script01_M005,1,Sess17_script01_M005_sent1,아 이거 10분이면 끝나 조금만 기다려.,anger,2.5,3.3,어,val
+Sess20_script06_M013,1,Sess20_script06_M013_sent1,우리 술 마셨잖아.,anger,1.6,4.7,잖아,val
+Sess17_script05_M005,1,Sess17_script05_M005_sent1,-; -; -,fear,1.6,3.7,; ; ,val
+Sess19_script01_M016,1,Sess19_script01_M016_sent1,못하겠어요?,anger,2.0,3.1,어요,val
+Sess18_script03_F019,2,Sess18_script03_F019_sent2,주선해줄게.,happiness,4.4,4.7,ᆯ게,val
+Sess20_impro01_M026,2,Sess20_impro01_M026_sent2,(안그랬어),happiness,3.9,3.5,어,val
+Sess17_impro01_M026,2,Sess17_impro01_M026_sent2,o/ 미안해 엄마.,sadness,2.5,2.0,어,val
+Sess20_script03_M025,1,Sess20_script03_M025_sent1,여진이 너가 생각해도 젓가락 백개는 좀 심했지?,sadness,3.6,2.9,지,val
+Sess20_impro01_M037,2,Sess20_impro01_M037_sent2,사랑해.,happiness,4.0,4.0,어,val
+Sess20_script02_M016,2,Sess20_script02_M016_sent2,이거 난리났다.,happiness,5.0,5.0,다,val
+Sess20_impro04_F018,2,Sess20_impro04_F018_sent2,아마 너 여자친구도 그럴거야.,sadness,2.6,2.1,야,val
+Sess17_impro01_F029,1,Sess17_impro01_F029_sent1,알았어.,sadness,3.4,2.8,어,val
+Sess20_script03_M033,1,Sess20_script03_M033_sent1,알았어 여진아.,happiness,4.4,4.0,어,val
+Sess20_impro03_F013,1,Sess20_impro03_F013_sent1,말이 좀 지금 심한 거 아니에요?,anger,2.4,3.5,에요,val
+Sess18_script03_F011,1,Sess18_script03_F011_sent1,-; -,surprise,4.0,3.9,; ,val
+Sess19_script05_M005,1,Sess19_script05_M005_sent1,-; -; -,fear,1.9,3.6,; ; ,val
+Sess19_script05_M022,4,Sess19_script05_M022_sent4,n/ 어차피 죽었는지 살았는지도 모르는데 알바 없잖아.,anger,1.4,4.1,잖아,val
+Sess17_script05_F001,1,Sess17_script05_F001_sent1,-,surprise,2.5,3.4,,val
+Sess18_script05_F019,1,Sess18_script05_F019_sent1,-,surprise,1.4,4.6,,val
+Sess18_impro02_M019,1,Sess18_impro02_M019_sent1,그 징계위원회가가지고 제가 다 들려드릴게요.,anger,1.9,2.8,ᆯ게요,val
+Sess18_impro02_M007,1,Sess18_impro02_M007_sent1,부장님 저한테 왜 이러시는 겁니까?,anger,2.2,3.0,ᆸ니까,val
+Sess19_script04_M026,1,Sess19_script04_M026_sent1,-,surprise,2.2,3.9,,val
+Sess19_script03_F012,1,Sess19_script03_F012_sent1,-; -,surprise,3.7,4.6,; ,val
+Sess18_impro02_F018,7,Sess18_impro02_F018_sent7,왜 제가 여기다 에너질 쏟아야 돼요.,anger,1.7,4.3,어요,val
+Sess18_impro02_F017,1,Sess18_impro02_F017_sent1,아니 그런 뜻이 아니라 예를 들어서 전무님 아이디어를 가지고 (이렇게+그래요 전무님) 밑 빠진 독에 물붓기를 하게 된다면 회사 재정이 어떻게 되겠느냐고요.,anger,1.8,4.2,느냐고요,val
+Sess19_script02_F021,2,Sess19_script02_F021_sent2,둘째 결혼 시키고 당신도 재혼해.,sadness,2.3,2.7,어,val
+Sess20_script06_F019,1,Sess20_script06_F019_sent1,-,surprise,1.5,4.5,,val
+Sess17_script05_M001,1,Sess17_script05_M001_sent1,-,surprise,1.9,3.8,,val
+Sess18_impro04_F019,1,Sess18_impro04_F019_sent1,지금 사랑이랑 다르겠지만 엄마도 좀 그런 느낌 알 거 같아.,sadness,3.3,2.3,어,val
+Sess18_script06_M018,1,Sess18_script06_M018_sent1,무슨 말을 그렇게 하세요?,anger,2.2,3.1,세요,val
+Sess20_script02_M024,1,Sess20_script02_M024_sent1,이야 돈이 좋긴 좋네.,happiness,4.4,4.3,네,val
+Sess20_impro02_M015,2,Sess20_impro02_M015_sent2,그 말할 정도에 실력을 요리 실력도 그렇게 높이면 되겠네 지금.,anger,2.4,4.1,네,val
+Sess20_script01_F007,1,Sess20_script01_F007_sent1,당신 나 없이도 꿋꿋하게 애들 키우면서 살아야 돼.,sadness,1.7,2.5,어,val
+Sess18_script05_M029,1,Sess18_script05_M029_sent1,-,fear,1.8,3.9,,val
+Sess20_impro01_F009,1,Sess20_impro01_F009_sent1,참 아니 그렇게 소독해주겠단 사람이 집안 응급 상자는 어딨는지 몰라?,happiness,3.9,3.1,어,val
+Sess19_script03_M014,1,Sess19_script03_M014_sent1,-,surprise,4.1,4.3,,val
+Sess19_script02_F021,1,Sess19_script02_F021_sent1,마지막 부탁이 있어.,sadness,2.3,2.7,어,val
+Sess20_script06_F006,1,Sess20_script06_F006_sent1,-,fear,1.9,4.2,,val
+Sess17_impro01_M026,1,Sess17_impro01_M026_sent1,(엄마+그냥) 투정부리고 싶었나 봐.,sadness,2.5,2.0,어,val
+Sess19_script05_F007,1,Sess19_script05_F007_sent1,-ݾ; -,fear,1.8,4.0,ݾ; ,val
+Sess20_script05_F017,1,Sess20_script05_F017_sent1,근데 원래 면접을 이런 식으로 보시나요?,anger,2.0,3.1,나요,val
+Sess20_script01_F019,2,Sess20_script01_F019_sent2,나도 사람인데.,sadness,1.3,4.5,ᆫ데,val
+Sess19_impro03_F019,1,Sess19_impro03_F019_sent1,당신 오기 전까지 저도 이 가게 주방장이었어요.,anger,2.2,3.9,어요,val
+Sess19_impro01_F025,2,Sess19_impro01_F025_sent2,오랜만에 엄마가 솜씨발휘 좀 해볼게.,happiness,4.1,3.4,ᆯ게,val
+Sess18_impro02_F014,1,Sess18_impro02_F014_sent1,음 개인적인 사정은 알겠는데 아 회사라는 게 모든 추가 비용이 발생한다고 해서 다 쓸 수 있는 게 아니에요.,anger,2.4,3.2,에요,val
+Sess20_script01_M013,1,Sess20_script01_M013_sent1,하아 그러니까 저번에 가슴 아프다고 할 때 내가 병원에 가보라고 했잖아.,sadness,1.6,4.8,잖아,val
+Sess19_script02_F013,1,Sess19_script02_F013_sent1,아냐 난 아냐 (틀렸어),sadness,1.9,2.1,어,val
+Sess17_impro03_F032,1,Sess17_impro03_F032_sent1,(너가 해주는 거면 다 좋지+아구찜 해줄게) 알았어요.,happiness,4.1,3.7,지 | ᆯ게 | 어요,val
+Sess20_script02_F007,1,Sess20_script02_F007_sent1,그냥 인터넷으로 나중에 검색하라니까 핸드폰 있잖아.,anger,2.0,4.3,잖아,val
+Sess17_script05_F008,1,Sess17_script05_F008_sent1,-; -,surprise,2.0,4.1,; ,val
+Sess19_impro04_M014,2,Sess19_impro04_M014_sent2,아님 내가 찾아볼게.,anger,3.0,3.8,ᆯ게,val
+Sess19_script03_F018,2,Sess19_script03_F018_sent2,내가 입이 좀 무겁잖아 그니까 신상 (구두 좀),happiness,4.4,3.8,잖아,val
+Sess20_impro04_M013,2,Sess20_impro04_M013_sent2,그거 때문에 미칠 거 같다니까.,sadness,1.2,3.1,다니까,val
+Sess20_script05_F018,5,Sess20_script05_F018_sent5,가뜩이나 취직 안 돼서 괴로워 죽겠는데 사람을 갖고 놀아?,anger,1.6,4.4,어,val
+Sess20_script01_M024,1,Sess20_script01_M024_sent1,미숙아 내가 잘못했어 내가 진짜 잘못했어.,sadness,1.6,2.9,어 | 어,val
+Sess19_impro02_F022,1,Sess19_impro02_F022_sent1,-,surprise,2.5,4.2,,val
+Sess20_impro03_M024,3,Sess20_impro03_M024_sent3,그럼 제대로 판단하고 저는 가보겠습니다.,anger,2.5,4.4,습니다,val
+Sess18_impro01_M026,1,Sess18_impro01_M026_sent1,(생각난다+뭔 소리야) o/ N/ 아우 피곤하다.,happiness,4.2,3.3,야 | 다,val
+Sess18_impro03_M010,1,Sess18_impro03_M010_sent1,-,disgust,2.1,3.6,,val
+Sess18_script02_F019,2,Sess18_script02_F019_sent2,b/ 나도 사람인데.,sadness,1.0,4.0,ᆫ데,val
+Sess18_script05_F019,1,Sess18_script05_F019_sent1,-,surprise,1.4,4.6,,val
+Sess17_script02_M017,2,Sess17_script02_M017_sent2,나 속인거야?,sadness,1.5,3.7,ᆫ거야,val
+Sess19_script03_F012,1,Sess19_script03_F012_sent1,-; -,surprise,3.7,4.6,; ,val
+Sess18_script01_F012,1,Sess18_script01_F012_sent1,너무 공격적으로 생각하시는 거 아닌가요?,anger,2.0,3.5,ᆫ가요,val
+Sess20_script02_F023,1,Sess20_script02_F023_sent1,(응+오빠) o/ 내 친구 은지랑 소개팅 하고 싶다고 했지?,happiness,4.4,4.0,지,val
+Sess18_impro04_M012,1,Sess18_impro04_M012_sent1,(두 단을 사+엄마) 내 말 듣고 있냐고요.,anger,1.6,4.3,냐고,val
+Sess20_script06_M021,3,Sess20_script06_M021_sent3,너 입만 뻥끗해봐.,anger,1.6,3.8,어,val
+Sess18_script04_M032,1,Sess18_script04_M032_sent1,진아 사랑해.,happiness,3.7,3.3,어,val
+Sess20_impro01_M032,2,Sess20_impro01_M032_sent2,빨리 잠이나 자세요.,happiness,3.9,3.1,세요,val
+Sess20_script02_F022,4,Sess20_script02_F022_sent4,오늘 오늘의 운세를 보더니 좀 희 희한했거든.,happiness,4.8,4.6,거든,val
+Sess18_impro01_F010,1,Sess18_impro01_F010_sent1,-,surprise,3.5,3.4,,val
+Sess20_script06_M001,1,Sess20_script06_M001_sent1,-,surprise,1.9,3.7,,val
+Sess18_impro01_F022,1,Sess18_impro01_F022_sent1,당신 그때 회사도 못 (갔잖아),happiness,4.4,3.9,잖아,val
+Sess19_impro02_M007,1,Sess19_impro02_M007_sent1,하지만 완성하려고 하는데에는 그만큼 비용이 들 수 밖에 없었어요.,anger,2.4,4.0,어요,val
+Sess17_impro02_F024,1,Sess17_impro02_F024_sent1,알겠습니다.,anger,1.7,3.2,습니다,val
+Sess20_script06_F020,1,Sess20_script06_F020_sent1,-; -,fear,1.5,4.4,; ,val
+Sess18_script03_F010,1,Sess18_script03_F010_sent1,-; -; -,surprise,3.9,4.1,; ; ,val
+Sess19_script02_F016,1,Sess19_script02_F016_sent1,미안해 아빠는 3년 동안 폐암으로 병원에 계시다가 돌아가셨어.,sadness,2.0,2.0,어 | 어,val
+Sess20_impro03_M023,2,Sess20_impro03_M023_sent2,절대로 못 죽죠.,anger,2.2,3.9,죠,val
+Sess17_script02_F019,2,Sess17_script02_F019_sent2,나도 사람인데.,sadness,1.2,3.7,ᆫ데,val
+Sess17_script05_M010,1,Sess17_script05_M010_sent1,-,fear,2.3,3.2,,val
+Sess17_script01_F012,1,Sess17_script01_F012_sent1,-; -,surprise,4.2,4.1,; ,val
+Sess20_script01_M019,3,Sess20_script01_M019_sent3,일단 정리하고 병원 가자?,sadness,2.0,2.9,자,val
+Sess17_script05_F020,1,Sess17_script05_F020_sent1,-,surprise,2.0,3.7,,val
+Sess18_script03_F011,1,Sess18_script03_F011_sent1,-; -,surprise,4.0,3.9,; ,val
+Sess20_script06_M014,1,Sess20_script06_M014_sent1,-,fear,1.8,3.7,,val
+Sess20_impro02_M003,1,Sess20_impro02_M003_sent1,-,disgust,1.9,3.5,,val
+Sess20_impro04_F024,4,Sess20_impro04_F024_sent4,아 내가 김치찌개 해준다고 했지?,happiness,3.9,3.2,지,val
+Sess18_impro03_M011,1,Sess18_impro03_M011_sent1,-; -Կ,disgust,1.9,3.5,; ?Կ,val
+Sess20_script01_M010,2,Sess20_script01_M010_sent2,농담하는 거지?,sadness,2.0,3.5,지,val
+Sess19_script05_M004,1,Sess19_script05_M004_sent1,-,surprise,2.1,4.0,,val
+Sess20_script02_M014,1,Sess20_script02_M014_sent1,-,surprise,4.8,4.3,,val
+Sess19_script05_M007,1,Sess19_script05_M007_sent1,-; -,surprise,2.1,4.2,; ,val
+Sess19_script05_M028,1,Sess19_script05_M028_sent1,-,surprise,1.9,3.9,?,val
+Sess18_impro04_F020,2,Sess18_impro04_F020_sent2,야 엄마도 알어.,sadness,2.7,3.4,어,val
+Sess17_impro02_M006,1,Sess17_impro02_M006_sent1,-; -,disgust,1.8,3.5,; ,val
+Sess18_impro02_F022,2,Sess18_impro02_F022_sent2,아니 전무님 어떻게 그렇게 말씀하실 수가 있어.,anger,1.8,4.4,어,val
+Sess20_impro01_M025,2,Sess20_impro01_M025_sent2,마음 아프게.,happiness,3.6,2.9,게,val
+Sess17_impro02_M017,1,Sess17_impro02_M017_sent1,아 뭐가 심해요.,anger,1.7,4.3,어요,val
+Sess17_impro02_M007,1,Sess17_impro02_M007_sent1,-,disgust,1.8,3.6,,val
+Sess17_script02_F020,5,Sess17_script02_F020_sent5,예쁜 모습 좋은 모습만 남기고 싶어.,sadness,2.0,2.1,어,val
+Sess19_script05_M001,1,Sess19_script05_M001_sent1,-,surprise,2.2,4.1,,val
+Sess20_script02_M014,1,Sess20_script02_M014_sent1,-,surprise,4.8,4.3,,val
+Sess19_script05_F019,1,Sess19_script05_F019_sent1,-,surprise,1.9,4.4,,val
+Sess17_impro03_M022,2,Sess17_impro03_M022_sent2,그 윤서 깨겠네.,happiness,4.5,4.0,네,val
+Sess20_impro02_F006,1,Sess20_impro02_F006_sent1,지금 좀 말이 지나치신 거 아세요?,anger,2.0,3.5,세요,val
+Sess18_impro04_F023,1,Sess18_impro04_F023_sent1,아들 이런 말 해줘서 고맙고 음 슬픈 거는 좀 시간 지나면은 나아질거야.,sadness,3.9,2.5,야,val
+Sess20_impro01_F006,1,Sess20_impro01_F006_sent1,-; -,surprise,3.6,3.0,; ,val
+Sess18_impro03_M016,2,Sess18_impro03_M016_sent2,제가 지금 한 말에 지금 자존심이 상하고 화가 나고 짜증이 나고 b/ 제가 재수가 없고 그러세요?,anger,1.6,3.8,세요,val
+Sess20_impro03_F027,1,Sess20_impro03_F027_sent1,-,disgust,2.3,4.1,,val
+Sess17_script02_M014,2,Sess17_script02_M014_sent2,n/ b/ 이왕 이렇게 된거 할 수 있는 한 뭐든지 해보자.,sadness,2.0,3.2,자,val
+Sess20_script01_M014,3,Sess20_script01_M014_sent3,그리고 6개월이 아니라 6년 아니 60년을 살 수도 있고 어서 병원에 가자 응?,sadness,1.9,3.0,자,val
+Sess17_script02_F013,1,Sess17_script02_F013_sent1,아냐 난 아냐 틀렸어.,sadness,1.4,1.5,어,val
+Sess18_script03_M017,1,Sess18_script03_M017_sent1,o/ 뭐야 이거 진짜야 이거?,happiness,5.0,5.0,야 | 야,val
+Sess20_impro01_M046,1,Sess20_impro01_M046_sent1,사랑해.,happiness,4.2,3.3,어,val
+Sess17_impro03_M026,1,Sess17_impro03_M026_sent1,사랑한다고.,happiness,4.5,3.7,ᆫ다고,val
+Sess17_script06_F024,1,Sess17_script06_F024_sent1,(있어+에휴) 참나.,happiness,4.2,3.4,어,val
+Sess20_script06_M028,1,Sess20_script06_M028_sent1,-,surprise,2.1,3.9,?,val
+Sess17_script05_F004,1,Sess17_script05_F004_sent1,-; -,fear,2.1,3.6,; ,val
+Sess17_script05_M009,1,Sess17_script05_M009_sent1,-; -ݾ,surprise,1.9,3.9,; ݾ,val
+Sess20_script06_M029,1,Sess20_script06_M029_sent1,-,surprise,1.6,4.5,,val
+Sess19_impro04_F018,1,Sess19_impro04_F018_sent1,솔직히 내가 그게 그냥 맹장인 줄 알았으면 당신 그랬겠어?,happiness,4.2,3.4,어,val
+Sess17_script05_M007,1,Sess17_script05_M007_sent1,-; -,surprise,1.6,4.1,; ,val
+Sess20_impro02_F014,4,Sess20_impro02_F014_sent4,뭐 수상경력도 화려하고 뭐 해외도 몇 번 왔다갔다 하시고 그러시다고요.,anger,1.5,4.6,다고요,val
+Sess19_script05_F006,1,Sess19_script05_F006_sent1,-; -ݾ,surprise,1.7,4.3,; ݾ,val
+Sess18_script05_F006,1,Sess18_script05_F006_sent1,-,fear,2.0,4.2,,val
+Sess19_impro04_M028,1,Sess19_impro04_M028_sent1,아니 안 좋아.,happiness,3.4,3.3,어,val
+Sess20_impro03_F014,1,Sess20_impro03_F014_sent1,이 프로젝트 윤찬 대리가 한 거잖아요.,anger,2.2,3.5,잖아요,val
+Sess18_impro01_M024,3,Sess18_impro01_M024_sent3,근데 당신 말은 똑바로 하자.,happiness,4.0,4.1,자,val
+Sess17_impro01_F027,3,Sess17_impro01_F027_sent3,특히 아빠 돌아가시고 나서 왜 나만 이렇게 힘든 건가 그렇게 생각했는데 우리 아들 아들이 있어서 엄마는 견뎠다.,sadness,2.0,2.0,다,val
+Sess18_impro01_M019,4,Sess18_impro01_M019_sent4,됐어.,happiness,3.4,3.9,어,val

@@ -1,0 +1,25 @@
+﻿emotion,metric,n,baseline_mean,emotion_aware_mean,difference_emotion_aware_minus_baseline,baseline_std,emotion_aware_std,diff_95ci_low,diff_95ci_high,paired_t_p,wilcoxon_p,cohen_dz,significance,interpretation
+anger,R_VA,50,0.797661,0.812636,0.014976,0.09884,0.092804,0.005734,0.02498,0.004024,0.002818,0.42688,**,emotion-aware significantly higher
+anger,semantic_fidelity,50,4.04,4.16,0.12,0.968061,0.865672,-0.12,0.38,0.35977,0.334307,0.13074,n.s.,emotion-aware higher trend
+anger,emotion_consistency,50,3.88,4.16,0.28,1.023001,0.841767,0.0,0.56,0.055884,0.043927,0.276964,*,emotion-aware significantly higher
+anger,fluency,50,4.54,4.66,0.12,0.676425,0.658074,-0.06,0.32,0.224184,0.225229,0.174096,n.s.,emotion-aware higher trend
+disgust,R_VA,9,0.751434,0.897757,0.146323,0.048366,0.066635,0.097979,0.1885,0.00034,0.003906,1.985468,**,emotion-aware significantly higher
+disgust,semantic_fidelity,9,1.0,1.333333,0.333333,0.0,1.0,0.0,1.0,0.346594,1.0,0.333333,n.s.,emotion-aware higher trend
+disgust,emotion_consistency,9,1.0,1.333333,0.333333,0.0,1.0,0.0,1.0,0.346594,1.0,0.333333,n.s.,emotion-aware higher trend
+disgust,fluency,9,1.333333,3.333333,2.0,1.0,1.322876,1.0,2.666667,0.00395,0.03125,1.333333,*,emotion-aware significantly higher
+fear,R_VA,21,0.735339,0.861603,0.126264,0.091488,0.12204,0.077662,0.17573,9.7e-05,0.000211,1.058422,***,emotion-aware significantly higher
+fear,semantic_fidelity,21,1.380952,2.904762,1.52381,1.20317,2.047065,0.380952,2.666667,0.016785,0.020921,0.569399,*,emotion-aware significantly higher
+fear,emotion_consistency,21,1.380952,2.904762,1.52381,1.20317,2.047065,0.380952,2.666667,0.016785,0.020921,0.569399,*,emotion-aware significantly higher
+fear,fluency,21,2.0,3.52381,1.52381,1.643168,1.860619,0.380952,2.666667,0.016785,0.020921,0.569399,*,emotion-aware significantly higher
+happiness,R_VA,50,0.767466,0.775176,0.00771,0.113065,0.108541,-0.002767,0.018492,0.164064,0.137151,0.199786,n.s.,emotion-aware higher trend
+happiness,semantic_fidelity,50,4.0,4.3,0.3,1.124858,0.707107,0.02,0.58,0.038026,0.026596,0.301542,*,emotion-aware significantly higher
+happiness,emotion_consistency,50,3.84,4.3,0.46,1.131371,0.646813,0.2,0.74,0.00196,0.002475,0.462747,**,emotion-aware significantly higher
+happiness,fluency,50,4.44,4.64,0.2,0.907115,0.484873,0.0,0.42,0.076842,0.083195,0.255604,n.s.,emotion-aware higher trend
+sadness,R_VA,50,0.813489,0.813216,-0.000273,0.08794,0.090508,-0.003944,0.003139,0.882121,0.934727,-0.02108,n.s.,baseline higher trend
+sadness,semantic_fidelity,50,4.36,4.5,0.14,0.749422,0.614452,-0.06,0.32,0.163708,0.161513,0.199958,n.s.,emotion-aware higher trend
+sadness,emotion_consistency,50,4.3,4.46,0.16,0.814411,0.676425,-0.08,0.3805,0.185125,0.181004,0.190076,n.s.,emotion-aware higher trend
+sadness,fluency,50,4.66,4.62,-0.04,0.592814,0.635353,-0.24,0.18,0.699043,0.538637,-0.054997,n.s.,baseline higher trend
+surprise,R_VA,50,0.734188,0.767496,0.033308,0.098664,0.07892,0.0125,0.053462,0.002425,0.000575,0.452283,***,emotion-aware significantly higher
+surprise,semantic_fidelity,50,1.0,1.18,0.18,0.0,0.800255,0.0,0.42,0.118158,0.10247,0.224928,n.s.,emotion-aware higher trend
+surprise,emotion_consistency,50,1.0,1.18,0.18,0.0,0.800255,0.0,0.42,0.118158,0.10247,0.224928,n.s.,emotion-aware higher trend
+surprise,fluency,50,1.42,2.4,0.98,1.162158,1.737932,0.56,1.42,6.4e-05,0.000516,0.618596,***,emotion-aware significantly higher

@@ -1,0 +1,9 @@
+pandas
+numpy
+scipy
+tqdm
+torch
+transformers
+openai
+anthropic
+openpyxl
