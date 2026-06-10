@@ -1,0 +1,26 @@
+﻿sample_id,source_text,pred_emotion,overall_preference_winner_condition
+01_corpus_ko_seg0480,또 올게요,surprise,tie
+02_corpus_ko_seg0859,그러니까 하지 말라고,happiness,audio_pred_emotion_aware
+02_corpus_ko_seg0233,제 앞에,surprise,audio_pred_emotion_aware
+03_corpus_ko_seg0186,이틀 내내 그 안경을 쓰는 거예요,surprise,audio_pred_emotion_aware
+04_corpus_ko_seg0300,의미 부여하실 필요 없어요 여러분,surprise,baseline
+02_corpus_ko_seg1118,어 덕분에 우리도 그렇고 진짜 너무 멋진 무대였어 난 이게,surprise,audio_pred_emotion_aware
+02_corpus_ko_seg1778,그렇게 하니까 저거 끊고 했어요 여러분,surprise,audio_pred_emotion_aware
+02_corpus_ko_seg1744,그런 얘기 하지말라고 하지말라고,neutral,tie
+06_corpus_ko_seg0714,저도 밤새 하라면 하죠,anger,baseline
+06_corpus_ko_seg0396,유튜브에 검색해봤는데,happiness,tie
+02_corpus_ko_seg0656,그렇네,anger,audio_pred_emotion_aware
+06_corpus_ko_seg0667,지은 누나,neutral,tie
+01_corpus_ko_seg0400,말한 적이 있어요?,anger,tie
+01_corpus_ko_seg0055,거의 다 썼어요,anger,baseline
+02_corpus_ko_seg0500,아 진짜,surprise,audio_pred_emotion_aware
+01_corpus_ko_seg0152,저는 진짜 그날 이후로,surprise,audio_pred_emotion_aware
+03_corpus_ko_seg0199,형 나 그 안경,surprise,audio_pred_emotion_aware
+06_corpus_ko_seg0843,그래서 형이랑 돈을 모아서,surprise,tie
+01_corpus_ko_seg0140,이게 어쨌든 사회 분들이,surprise,tie
+04_corpus_ko_seg0614,일로와,surprise,tie
+02_corpus_ko_seg1348,이때 일부러 3대4 목도 다르게 되잖아,happiness,audio_pred_emotion_aware
+02_corpus_ko_seg1021,여기 제 최애 장면이거든요,anger,audio_pred_emotion_aware
+02_corpus_ko_seg0746,나 연결 좀 해줘라,happiness,baseline
+02_corpus_ko_seg1304,셀린이랑 클래식에서,surprise,audio_pred_emotion_aware
+06_corpus_ko_seg0287,여기 있다,happiness,tie

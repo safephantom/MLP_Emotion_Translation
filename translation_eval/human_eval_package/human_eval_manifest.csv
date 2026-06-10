@@ -1,0 +1,4 @@
+﻿annotator,sheet_path,audio_dir,n_items,n_shared,n_unique
+annotator_1,human_eval_package\annotator_1\annotator_1_sheet.csv,human_eval_package\annotator_1\audio,50,25,25
+annotator_2,human_eval_package\annotator_2\annotator_2_sheet.csv,human_eval_package\annotator_2\audio,50,25,25
+annotator_3,human_eval_package\annotator_3\annotator_3_sheet.csv,human_eval_package\annotator_3\audio,50,25,25
