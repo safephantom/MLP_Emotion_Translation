@@ -20,8 +20,8 @@ def get_client():
     api_key = os.getenv("DEEPSEEK_API_KEY")
     if not api_key:
         raise RuntimeError(
-            "请先在 PowerShell 设置 API Key:\n"
-            '$env:DEEPSEEK_API_KEY="sk-bed03e11ec1e451c90b1c6b9b7d6b523"'
+            "PowerShell에서 API Key를 설정:\n"
+            '$env:DEEPSEEK_API_KEY="API Key"'
         )
     return OpenAI(api_key=api_key, base_url=BASE_URL)
 
