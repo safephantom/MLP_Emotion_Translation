@@ -3,26 +3,44 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 
-# Environment
+# Environment / secrets
 .env
 .venv/
 venv/
 
-# API keys
+# API keys / secrets
 *.key
 
-# Raw audio / segmented audio
-data_own/raw_audio/
-data_own/segment_audio/
+# Audio files
 *.wav
 *.mp3
 *.flac
 *.m4a
+*.aac
+*.ogg
+
+data_own/raw_audio/
+data_own/segment_audio/
+translation_eval/**/audio/
 
 # Large model checkpoints
 *.pth
 *.pt
 *.ckpt
+*.bin
+*.safetensors
+
+# Temporary / duplicated generated files
+translation_eval/human_eval_final_merged.xlsx
+translation_eval/human_eval_final_results.xlsx
+
+# intermediate translation-eval files that can be regenerated
+translation_eval/own_segments.csv
+translation_eval/own_eval_inputs.csv
+translation_eval/own_eval_inputs_with_vae.csv
+translation_eval/translation_outputs_audio_pred.csv
+translation_eval/va_predictions_audio_pred.csv
+translation_eval/quality_eval_audio_pred_blind.csv
 
 # Generated data/results
 translation_eval/*.csv
@@ -35,3 +53,12 @@ modeling/translation_eval/*.xlsx
 .DS_Store
 ._*
 Thumbs.db
+
+# Do NOT ignore these:
+# - translation_eval/*.py
+# - translation_eval/*result_section*.md
+# - translation_eval/final_results_writeup.md
+# - translation_eval/final_report_tables.xlsx
+# - translation_eval/10_final_key_tables.xlsx
+# - anonymized human_eval_package/
+# - anonymized human_eval_replacement_package/
