@@ -1,5 +1,0 @@
-﻿metric,n,baseline_mean,emotion_aware_mean,difference_emotion_aware_minus_baseline,baseline_std,emotion_aware_std,diff_95ci_low,diff_95ci_high,paired_t_p,wilcoxon_p,cohen_dz,significance,interpretation
-R_VA,230,0.77324,0.802607,0.029367,0.101739,0.1003,0.02044,0.038755,0.0,0.0,0.417301,***,emotion-aware significantly higher
-semantic_fidelity,230,3.078261,3.391304,0.313043,1.68553,1.649113,0.156522,0.469565,0.000106,8.1e-05,0.260199,***,emotion-aware significantly higher
-emotion_consistency,230,2.995652,3.382609,0.386957,1.652041,1.640548,0.230435,0.547826,3e-06,2e-06,0.313647,***,emotion-aware significantly higher
-fluency,230,3.508696,4.0,0.491304,1.722548,1.450794,0.313043,0.669565,0.0,1e-06,0.353045,***,emotion-aware significantly higher

@@ -232,18 +232,3 @@ This repository should not include:
 * or unnecessary large intermediate outputs.
 
 Model checkpoints may be included for reproducibility, but they can also be replaced with external download links if repository size becomes an issue.
-
----
-## Contributors
-
-This repository contains two connected components of the Emotion-Aware Korean Translation Program.
-
-| Component                    | Main Contributor | Description                                                                                                                                                                                         
-| Emotion recognition modeling | Kim Tae-hyun     | Built the KEMDy19-based audio/EF emotion recognition model and prepared the modeling pipeline.                                                                                                                                                    |
-| Translation evaluation       | Li Xiaomin       | Designed and implemented the Korean-to-English emotion-aware translation evaluation pipeline, including automatic V/A evaluation, LLM-based blind evaluation, human A/B evaluation, replacement annotation processing, and final result analysis. |
-
-The modeling component provides the affective prediction signals used by the downstream translation evaluation pipeline.
-
-## Contact
-
-For questions, please open an issue in this repository.
