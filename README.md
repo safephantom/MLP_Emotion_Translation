@@ -79,9 +79,15 @@ MLP_Emotion_Translation/
 ---
 
 ## 4. Key Experimental Findings
-Our experiments evaluated the translation performance under two conditions:
-1. **Baseline**: Text-only translation.
-2. **Emotion-Aware (Proposed)**: Audio + EF-informed emotion-aware translation.
+
+### 4.1. Front-End Emotion Classifier (Ablation Study)
+Before feeding predictions into the translation pipeline, we validated the multimodal LSTM emotion classifier. The ablation study proved that incorporating Korean sentence-final endings (EF) alongside raw audio features dramatically reduces emotional ambiguity:
+* **Proposed (Multimodal: Audio + EF)**: Achieved a Hard Accuracy of **59.17%** (Valence Loss: 0.0501, Arousal Loss: 0.0168).
+* **Ablated (Audio-Only baseline)**: Performance dropped to **44.28%** (Valence Loss: 0.0660, Arousal Loss: 0.0203).
+* **Key Insight**: Excluding grammatical EF weights causes classification accuracy to drop by **~15%p**, validating that EFs act as primary contextual punctuation for emotional resolution in spoken Korean.
+
+### 4.2. Downstream Translation Performance
+Our downstream translation evaluations compared the baseline (text-only translation) against the proposed model (audio + EF-informed emotion-aware translation).
 
 Through automated metrics, LLM-based blind judges, and human annotation, we found that:
 * **Emotion Consistency (Statistically Significant)**: Incorporating predicted emotion values (VAE) significantly improves the emotional fidelity of translations (Wilcoxon Signed-Rank Test: $p < 0.001$).
@@ -144,11 +150,3 @@ $env:DEEPSEEK_API_KEY="your_api_key_here"
    ```
 
 For a comprehensive walkthrough of the evaluation pipeline, see the [translation_eval/README.md](file:///c:/Project/MLP_Emotion_Translation/translation_eval/README.md).
-
----
-
-## Contributors
-This project consists of two collaborated components:
-
-* **Emotion recognition modeling** ([modeling/](file:///c:/Project/MLP_Emotion_Translation/modeling)): Developed KEMDy19-based multimodal models using Soft Labeling and Optuna parameter tuning.
-* **Translation evaluation pipeline** ([translation_eval/](file:///c:/Project/MLP_Emotion_Translation/translation_eval)): Designed the emotion-informed prompting, VAD-BERT evaluation, and compiled LLM/human evaluation trials.

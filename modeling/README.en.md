@@ -22,7 +22,9 @@ To gain a holistic representation of emotional states, the model is designed to 
 3. **Arousal (A) Regression**: Arousal measures the physical intensity of the emotion.
 
 The joint loss function combines Cross-Entropy (for emotion classes) and Mean Squared Error (for Valence and Arousal):
-$$\mathcal{L}_{total} = \alpha \cdot \mathcal{L}_{Emotion} + \beta \cdot \mathcal{L}_{Valence} + \gamma \cdot \mathcal{L}_{Arousal}$$
+$$
+\mathcal{L}_{total} = \alpha \cdot \mathcal{L}_{Emotion} + \beta \cdot \mathcal{L}_{Valence} + \gamma \cdot \mathcal{L}_{Arousal}
+$$
 
 ### 1.3. Hyperparameter Optimization via Optuna
 To establish a strong performance ceiling, we integrated the Optuna framework. Over 50 search trials, we identified the optimal network hyperparameters:
