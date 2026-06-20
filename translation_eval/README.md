@@ -1,234 +1,106 @@
-## MLP_Emotion_Translation
+# Translation Evaluation Pipeline (translation_eval)
 
-2026-1 <기계학습과 딥러닝> 수업의 기말 프로젝트 결과물입니다.
-
-# Emotion-Aware Korean Translation Program
-
-This project develops an emotion-aware Korean-to-English translation framework that integrates acoustic emotion cues and Korean sentence-final ending information (EF) into the translation pipeline.
-
-The main goal is to test whether a translation system can go beyond semantic-only translation and better preserve:
-
-* emotional nuance,
-* speaker attitude,
-* interactional stance,
-* and affective context.
-
-The project compares a text-only baseline translation with an audio/EF-informed emotion-aware translation.
+**English Version** | 🔗 **[한국어 버전 (Korean Version)](./README.ko.md)**
 
 ---
 
-## Overview
+## 1. Overview & Evaluation Paradigm
+This directory implements the downstream **translation generation and multi-dimensional evaluation pipeline**. 
 
-Korean spoken utterances often encode emotion not only through lexical content, but also through prosody, speech intensity, and sentence-final endings.
-This project uses an emotion recognition model trained on KEMDy19 to predict affective signals and injects them into the translation process.
+The goal of this evaluation framework is to verify whether injecting predicted acoustic and linguistic emotional signals (Valence, Arousal, Emotion Category) into a Large Language Model (LLM) translation system improves translation quality, specifically by preserving the speaker's emotional stance without losing semantic information.
 
-```text
-Korean speech + Korean text + EF information
-        ↓
-Audio/EF-based emotion prediction
-        ↓
-Predicted emotion / valence / arousal
-        ↓
-Emotion-aware translation prompting
-        ↓
-English translation
-        ↓
-Automatic + LLM + human evaluation
-```
+The evaluation compares two conditions:
+1. **Baseline**: Text-only translation prompt.
+2. **Emotion-Aware (Proposed)**: Translation prompt enriched with Valence, Arousal, and Emotion categories predicted by the front-end multimodal LSTM model.
 
 ---
 
-## Quick Start
+## 2. Step-by-Step Pipeline Execution
+The pipeline is structured into 11 logical steps, each mapping to a specific Python script:
 
-Clone the repository and install dependencies:
+### Step 0: Segment Preparation & Audio Inspection
+* **`00_prepare_own_segments_from_srt.py`**: Extracts segment-level Korean texts and corresponding audio clips from source video/subtitles.
+* **`00_inspect_audio_model_project.py`**: Inspects local configurations and model checkpoints to ensure compatibility.
 
-```bash
-git clone https://github.com/YOUR_USERNAME/MLP_Emotion_Translation.git
-cd MLP_Emotion_Translation
+### Step 1: Input Preprocessing
+* **`01_prepare_eval_inputs.py`**: Standardizes the Korean source inputs and extracts linguistic features.
 
-pip install pandas numpy scipy openpyxl torch transformers librosa soundfile tqdm openai
-```
+### Step 2: Front-End Affect Inference
+* **`02_predict_audio_ef_vae.py`**: Uses the trained multimodal emotion model (Audio + EF) to predict:
+  * Discrete Emotion Category
+  * Valence (1 to 5 scale)
+  * Arousal (1 to 5 scale)
 
-Set the DeepSeek API key before running translation or LLM-judge scripts:
+### Step 3: LLM Translation Generation
+* **`03_generate_translation_audio_pred_deepseek.py`**: Generates translations via DeepSeek-V3 API under the two experimental conditions.
 
-```bash
-export DEEPSEEK_API_KEY="your_api_key_here"
-```
+### Step 4: Automated Emotion Estimation
+* **`04_predict_va_vadbert.py`**: Estimates Valence and Arousal scores from the generated English translations using a pre-trained VAD-BERT regressor to measure emotion preservation automatically.
 
-For PowerShell:
+### Step 5: LLM-Based Blind Quality Evaluation
+* **`05_evaluate_quality_deepseek_blind.py`**: Executes an LLM-based blind A/B judgment on translation pairs across semantic fidelity, emotion consistency, fluency, and overall preference.
 
-```powershell
-$env:DEEPSEEK_API_KEY="your_api_key_here"
-```
+### Step 6: Compilation of Automatic Metrics
+* **`06_compute_final_summary.py`**: Summarizes the automatic scores, including statistical correlations between source V/A and target V/A.
 
-Run the main translation evaluation pipeline step by step:
+### Step 7 & 7.5: Human Evaluation Sheet Generation
+* **`07_prepare_human_eval_package.py`**: Packages translations into anonymized sheets for human evaluation.
+* **`07_5_prepare_replacement_for_invalid_items.py`**: Identifies outliers or invalid ratings in human feedback and generates replacement validation sheets.
 
-```bash
-python translation_eval/01_prepare_eval_inputs.py
-python translation_eval/02_predict_audio_ef_vae.py
-python translation_eval/03_generate_translation_audio_pred_deepseek.py
-python translation_eval/04_predict_va_vadbert.py
-python translation_eval/05_evaluate_quality_deepseek_blind.py
-python translation_eval/06_compute_final_summary.py
-```
+### Step 8 & 8.5: Human Evaluation Compilation
+* **`08_compute_human_eval_summary.py`**: Compiles raw human annotations, calculates mean difference scores, and conducts Wilcoxon Signed-Rank tests for significance.
+* **`08_human_eval_summary_simple.py`**: Outputs simplified summary metrics.
 
-For human evaluation and final reporting:
-
-```bash
-python translation_eval/07_prepare_human_eval_package.py
-python translation_eval/07_5_prepare_replacement_for_invalid_items.py
-python translation_eval/08_compute_human_eval_summary.py
-python translation_eval/09_make_final_report_tables.py
-python translation_eval/10_make_final_result_section.py
-```
+### Step 9 & 10: Reporting & Writing
+* **`09_make_final_report_tables.py`**: Automates table formatting for LaTeX and Markdown.
+* **`10_make_final_result_section.py`**: Integrates quantitative and qualitative outputs into a cohesive evaluation report.
 
 ---
 
-## Repository Structure
+## 3. Experimental Evaluation Results
 
-```text
-MLP_Emotion_Translation/
-├─ README.md
-├─ .gitignore
-│
-├─ modeling/
-│  ├─ train_audio_only.py
-│  ├─ train_multimodal.py
-│  ├─ optimize_hyperparams.py
-│  ├─ final_report_modeling.md
-│  └─ README.md
-│
-└─ translation_eval/
-   ├─ 00_inspect_audio_model_project.py
-   ├─ 00_prepare_own_segments_from_srt.py
-   ├─ 01_prepare_eval_inputs.py
-   ├─ 02_predict_audio_ef_vae.py
-   ├─ 03_generate_translation_audio_pred_deepseek.py
-   ├─ 04_predict_va_vadbert.py
-   ├─ 05_evaluate_quality_deepseek_blind.py
-   ├─ 06_compute_final_summary.py
-   ├─ 07_prepare_human_eval_package.py
-   ├─ 07_5_prepare_replacement_for_invalid_items.py
-   ├─ 08_human_eval_summary_simple.py
-   ├─ 08_compute_human_eval_summary.py
-   ├─ 09_make_final_report_tables.py
-   ├─ 10_make_final_result_section.py
-   ├─ 10_final_result_section_KR.md
-   ├─ final_results_writeup.md
-   ├─ human_eval_package/
-   └─ human_eval_replacement_package/
-```
+Our evaluation setup involves:
+1. **Automated V/A Correlation**: Quantifying preservation of emotional dimensions.
+2. **LLM-Based Blind Evaluation**: $N=500$ evaluation pairs.
+3. **Human Blind A/B Evaluation**: Triple-annotated blind trials.
 
----
+### 3.1. Human Blind A/B Evaluation ($N = 150$)
 
-## Evaluation Design
+| Evaluation Dimension | Baseline Wins | Proposed Wins | Ties | Overall Interpretation |
+| :--- | :---: | :---: | :---: | :--- |
+| Semantic Fidelity | 43 | 36 | 71 | Baseline slightly favored (No stat. diff) |
+| **Emotion Consistency** | 20 | **62** | 68 | **Proposed clearly favored (Significant)** |
+| Fluency | 36 | 36 | 78 | Identical performance |
+| Overall Preference | 44 | **64** | 42 | Proposed moderately favored |
 
-The evaluation compares two translation conditions:
+### 3.2. Human Score-Based Statistical Analysis (Wilcoxon Signed-Rank Test)
 
-| Condition         | Description                                                                          |
-| ----------------- | ------------------------------------------------------------------------------------ |
-| Baseline      | Korean text-only translation                                                         |
-| Emotion-Aware | Translation using predicted emotion, valence, arousal, and EF-related affective cues |
+| Metric | Mean Score Diff. (Proposed - Baseline) | Wilcoxon $p$-value | Statistical Significance |
+| :--- | :---: | :---: | :--- |
+| Semantic Fidelity | -0.142 | 0.1507 | Not Significant ($p \ge 0.05$) |
+| **Emotion Consistency** | **+0.390** | **0.000195** | **Highly Significant ($p < 0.001$)** |
+| Fluency | +0.033 | 0.8260 | Not Significant ($p \ge 0.05$) |
 
-The evaluation consists of three parts:
+### 3.3. LLM-Based Blind Evaluation ($N = 500$)
 
-1. **Automatic V/A Preservation**
-   Measures whether valence and arousal tendencies are preserved after translation.
+| Evaluation Dimension | Baseline Wins | Proposed Wins | Ties | Overall Interpretation |
+| :--- | :---: | :---: | :---: | :--- |
+| Semantic Fidelity | 84 | 122 | 294 | Comparable |
+| **Emotion Consistency** | 34 | **227** | 239 | **Proposed strongly favored** |
+| Fluency | 85 | 94 | 321 | Comparable |
+| Overall Preference | 104 | **238** | 158 | Proposed favored |
 
-2. **LLM-Based Blind Evaluation**
-   Uses an LLM judge to compare baseline and emotion-aware translations on semantic fidelity, emotion consistency, fluency, and overall preference.
+### 3.4. Inter-Annotator Agreement (Human Evaluators)
 
-3. **Human Blind A/B Evaluation**
-   Human annotators compare two anonymized translations without knowing which system produced them.
+| Metric | Complete Agreement Rate | Fleiss' Kappa | Agreement Strength |
+| :--- | :---: | :---: | :--- |
+| Semantic Fidelity | 36% | 0.164 | Slight Agreement |
+| Emotion Consistency | 40% | 0.228 | Fair Agreement |
+| Fluency | 44% | 0.317 | Fair Agreement |
+| **Overall Preference** | **56%** | **0.467** | **Moderate Agreement** |
 
 ---
 
-## Results Summary
-
-### Human Blind A/B Evaluation
-
-| Metric                  | Baseline Wins | Emotion-Aware Wins | Ties | Main Result                       |
-| ----------------------- | ------------: | -----------------: | ---: | --------------------------------- |
-| Semantic Fidelity       |            43 |                 36 |   71 | Baseline slightly favored         |
-| **Emotion Consistency** |            20 |             **62** |   68 | **Emotion-aware clearly favored** |
-| Fluency                 |            36 |                 36 |   78 | No clear difference               |
-| Overall Preference      |            44 |                 64 |   42 | Emotion-aware moderately favored  |
-
-### Human Score-Based Evaluation
-
-| Metric                  | Mean Difference<br>(Emotion-Aware - Baseline) | Wilcoxon p-value | Interpretation              |
-| ----------------------- | --------------------------------------------: | ---------------: | --------------------------- |
-| Semantic Fidelity       |                                        -0.142 |         0.150677 | Not significant             |
-| **Emotion Consistency** |                                    **+0.390** |     **0.000195** | **Significant improvement** |
-| Fluency                 |                                        +0.033 |         0.826030 | Not significant             |
-
-### LLM-Based Blind Evaluation
-
-| Metric                  | Baseline Wins | Emotion-Aware Wins | Ties | Interpretation                     |
-| ----------------------- | ------------: | -----------------: | ---: | ---------------------------------- |
-| Semantic Fidelity       |            84 |                122 |  294 | Mostly tied                        |
-| **Emotion Consistency** |            34 |            **227** |  239 | **Emotion-aware strongly favored** |
-| Fluency                 |            85 |                 94 |  321 | Mostly tied                        |
-| Overall Preference      |           104 |                238 |  158 | Emotion-aware favored              |
-
-### Inter-Annotator Agreement
-
-| Metric              | Complete Agreement Rate | Fleiss' Kappa |
-| ------------------- | ----------------------: | ------------: |
-| Semantic Fidelity   |                    0.36 |         0.164 |
-| Emotion Consistency |                    0.40 |         0.228 |
-| Fluency             |                    0.44 |         0.317 |
-| Overall Preference  |                    0.56 |         0.467 |
-
----
-
-## Main Finding
-
-The proposed emotion-aware translation setting does **not** uniformly improve general translation quality.
-
-Instead, its strongest contribution is in emotion consistency:
-
-> Audio/EF-informed affective prompting significantly improves human-rated emotion consistency while leaving semantic fidelity and fluency largely unchanged.
-
-Therefore, this project should be interpreted as an emotion-preservation translation framework, rather than a general-purpose translation-quality improvement method.
-
----
-
-## Modeling Component
-
-The `modeling/` folder contains the emotion recognition backbone of the project.
-
-It includes:
-
-* an audio-only baseline model,
-* an audio + EF multimodal model,
-* EF-based emotion weighting,
-* KEMDy19 soft-label processing,
-* and modeling reports.
-
-The trained model produces the affective signals used in the downstream translation evaluation pipeline.
-
----
-
-## Human Evaluation Note
-
-Human evaluation was conducted as a blind A/B comparison.
-
-The human evaluation files are anonymized.
-A/B condition mapping files are included only after annotation completion to support reproducibility.
-
-If this repository is made public beyond the project context, users should review whether the human evaluation answer-key files should remain included.
-
----
-
-## Privacy and Release Notes
-
-This repository should not include:
-
-* raw audio files,
-* API keys,
-* local environment files,
-* unlicensed private data,
-* or unnecessary large intermediate outputs.
-
-Model checkpoints may be included for reproducibility, but they can also be replaced with external download links if repository size becomes an issue.
+## 4. Key Insights & Conclusion
+1. **Emotion Preservation vs. Translation Quality**: Injecting Valence/Arousal/Emotion cues does not lead to a uniform upgrade in raw language translation (fluency or general lexicon). However, it shows a **clear, statistically validated improvement in preserving speaker stance and emotional consistency** ($p < 0.001$).
+2. **Robustness of the LLM Prompting**: The DeepSeek model successfully utilizes the injected VAE context to alter lexical choices (e.g., changing endings, utilizing emotion-specific vocabulary) to match the target tone without hallucinating or damaging the underlying semantic meaning.

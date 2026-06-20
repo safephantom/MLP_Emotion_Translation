@@ -3,6 +3,9 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 
+# docs
+*.pdf
+
 # Environment / secrets
 .env
 .venv/

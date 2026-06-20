@@ -32,8 +32,8 @@ def main():
 
     print_section("Important files")
     important = [
-        "train_multimodal.py",
-        "train_audio_only.py",
+        "02_train_multimodal.py",
+        "03_train_audio_only.py",
         "dataset.py",
         "kemdy19_multimodal_lstm.pth",
         "kemdy19_audio_only.pth",
@@ -91,10 +91,12 @@ def main():
         print("dataset.py import: FAILED")
         print(repr(e))
 
-    print_section("Import train_multimodal.py")
+    import importlib
+
+    print_section("Import 02_train_multimodal.py")
     try:
-        import train_multimodal
-        print("train_multimodal.py import: SUCCESS")
+        train_multimodal = importlib.import_module("02_train_multimodal")
+        print("02_train_multimodal.py import: SUCCESS")
         for name in dir(train_multimodal):
             lower = name.lower()
             if (
@@ -107,13 +109,13 @@ def main():
             ):
                 print(" -", name)
     except Exception as e:
-        print("train_multimodal.py import: FAILED")
+        print("02_train_multimodal.py import: FAILED")
         print(repr(e))
 
-    print_section("Import train_audio_only.py")
+    print_section("Import 03_train_audio_only.py")
     try:
-        import train_audio_only
-        print("train_audio_only.py import: SUCCESS")
+        train_audio_only = importlib.import_module("03_train_audio_only")
+        print("03_train_audio_only.py import: SUCCESS")
         for name in dir(train_audio_only):
             lower = name.lower()
             if (
@@ -126,11 +128,11 @@ def main():
             ):
                 print(" -", name)
     except Exception as e:
-        print("train_audio_only.py import: FAILED")
+        print("03_train_audio_only.py import: FAILED")
         print(repr(e))
 
     print_section("Done")
-    print("把 checkpoint keys、state_dict sample keys、dataset.py 和 train_multimodal.py 的输出发我。")
+    print("Please send me the outputs of checkpoint keys, state_dict sample keys, dataset.py and 02_train_multimodal.py.")
 
 
 if __name__ == "__main__":

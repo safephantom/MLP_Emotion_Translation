@@ -1,29 +1,33 @@
 # KEMDy19 감정 인식 프로젝트 (최종 산출물)
 
-이 폴더(`final/`)는 KEMDy19 데이터셋을 활용하여 한국어 음성 및 종결어미(EF) 기반의 멀티모달 감정 인식 모델을 구축한 프로젝트의 최종 결과물만을 모아둔 곳입니다. 수많은 실험과 최적화를 거쳐 검증된 가장 안정적이고 성능이 높은 코드와 모델 가중치가 포함되어 있습니다.
-
-## 📂 파일 구조 및 설명 (File Structure & Description)
-
-### 🧠 모델 및 추론 (Model & Inference)
-* **`model.py`**: 멀티모달 감정 인식 모델의 핵심 아키텍처. 오디오 특징을 처리하는 LSTM과 종결어미(EF) 정보를 융합하는 레이어로 구성되어 있습니다.
-* **`kemdy19_multimodal_lstm.pth`**: Audio와 Text(종결어미)를 모두 활용하여 약 60%의 최고 정확도를 달성한 최종 멀티모달 모델 가중치 파일입니다.
-* **`kemdy19_audio_only.pth`**: 절제 연구(Ablation Study)를 위해 종결어미 정보를 완벽히 차단하고 오디오만으로 학습된 모델 가중치 파일입니다.
-
-### 🏋️‍♂️ 훈련 스크립트 (Training Scripts)
-* **`train_multimodal.py`**: 종결어미 정보와 오디오를 결합하여 멀티모달 모델을 훈련시키는 최종 스크립트입니다.
-* **`train_audio_only.py`**: 종결어미 정보를 균등 분포(`1/7`)로 마스킹하여 오디오 단독 성능을 평가하기 위한 절제 연구용 훈련 스크립트입니다.
-* **`optimize_hyperparams.py`**: Optuna 프레임워크를 활용하여 학습률, 배치 크기, 은닉층 차원, 드롭아웃 등의 최적 하이퍼파라미터를 탐색하여 도출해 낸 스크립트입니다.
-
-### 📊 데이터셋 및 전처리 (Dataset & Preprocessing)
-* **`dataset.py`**: 파이토치(PyTorch) `Dataset` 및 `DataLoader` 클래스. 캐시된 오디오 피처(`.pt`)와 CSV 라벨 데이터를 불러와 모델에 공급합니다.
-* **`merged_dataset_soft_fixed.csv`**: 평가자 10명의 감정 투표 비율(Soft Label)이 온전히 반영된 최종 감정 라벨 데이터셋입니다.
-* **`dynamic_ef_weights_fixed.csv`**: 각 종결어미(EF)별 감정 분포 확률을 사전에 계산해 둔 매핑 테이블입니다.
-* **`fix_dataset_labels.py`**: 초기 데이터 구축 시 발생했던 청취자(Listener)의 리액션 데이터 섞임 현상(Data Leakage)을 완벽하게 필터링한 전처리 스크립트입니다.
-
-### 📄 문서 (Documentation)
-* **`final_report_modeling.md`**: 본 프로젝트의 가설 설정부터 Soft Labeling, 하이퍼파라미터 튜닝, 절제 연구(Ablation Study)까지의 전체 모델링 과정을 관통하는 최종 종합 보고서입니다.
-* **`README.md`**: 현재 읽고 계신 파일로, `final` 폴더의 가이드 역할을 합니다.
+🔗 **[English Version](./README.en.md)** | **한국어 버전**
 
 ---
-## 🚀 빠른 시작 (Quick Start)
-새로운 환경에서 최고의 성능을 재현하려면, 구글 드라이브에 보관된 `cached_features_audio_only.zip` 파일을 다운로드하여 `cached_features/` 폴더에 압축을 푼 뒤, `train_multimodal.py`를 실행하시면 됩니다.
+
+이 폴더(`modeling/`)는 KEMDy19 데이터셋을 활용하여 한국어 음성 및 종결어미(EF) 기반의 멀티모달 감정 인식 모델을 구축한 프로젝트의 결과물이 포함되어 있습니다. 실험 및 최적화를 거쳐 검증된 코드와 모델 가중치가 포함되어 있습니다.
+
+## 📂 파일 구조 및 설명
+
+### 🧠 모델 및 추론
+* **`model.py`**: 멀티모달 감정 인식 모델의 아키텍처. 오디오 특징을 처리하는 LSTM과 종결어미(EF) 정보를 융합하는 레이어로 구성되어 있습니다.
+* **`kemdy19_multimodal_lstm.pth`**: 오디오와 텍스트(종결어미)를 모두 활용하여 약 60%의 최고 정확도를 달성한 최종 멀티모달 모델 가중치 파일입니다.
+* **`kemdy19_audio_only.pth`**: 절제 연구를 위해 종결어미 정보를 제외하고 오디오만으로 학습된 모델 가중치 파일입니다.
+
+### 🏋️‍♂️ 훈련 스크립트
+* **`02_train_multimodal.py`**: 종결어미 정보와 오디오를 결합하여 멀티모달 모델을 훈련시키는 스크립트입니다.
+* **`03_train_audio_only.py`**: 종결어미 정보를 균등 분포(`1/7`)로 마스킹하여 오디오 단독 성능을 평가하기 위한 절제 연구용 훈련 스크립트입니다.
+* **`01_optimize_hyperparams.py`**: Optuna 프레임워크를 활용하여 학습률, 배치 크기, 은닉층 차원, 드롭아웃 등의 최적 하이퍼파라미터를 탐색하여 도출해 낸 스크립트입니다.
+
+### 📊 데이터셋 및 전처리
+* **`dataset.py`**: 파이토치(PyTorch) `Dataset` 및 `DataLoader` 클래스. 캐시된 오디오 피처(`.pt`)와 CSV 라벨 데이터를 불러와 모델에 공급합니다.
+* **`merged_dataset_soft_fixed.csv`**: 평가자 10명의 감정 투표 비율(Soft Label)이 반영된 최종 감정 라벨 데이터셋입니다.
+* **`dynamic_ef_weights_fixed.csv`**: 각 종결어미(EF)별 감정 분포 확률을 사전에 계산해 둔 매핑 테이블입니다.
+* **`fix_dataset_labels.py`**: 초기 데이터 구축 시 발생했던 청취자 리액션 데이터 섞임 현상(데이터 누수)을 필터링한 전처리 스크립트입니다.
+
+### 📄 문서
+* **`final_report_modeling.md`**: 본 프로젝트의 가설 설정부터 Soft Labeling, 하이퍼파라미터 최적화, 절제 연구까지의 전체 모델링 과정을 관통하는 최종 종합 보고서입니다.
+* **`README.md`**: 현재 읽고 계신 파일로, `modeling` 폴더의 가이드 역할을 합니다.
+
+---
+## 🚀 빠른 시작
+새로운 환경에서 모델을 재학습하려면, 구글 드라이브에 보관된 `cached_features_audio_only.zip` 파일을 다운로드하여 `cached_features/` 폴더에 압축을 푼 뒤, `02_train_multimodal.py`를 실행하시면 됩니다.
