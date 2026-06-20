@@ -48,7 +48,7 @@ annotator_1,annotator_1_046,06_corpus_ko_seg0287,True,baseline,audio_pred_emotio
 annotator_1,annotator_1_047,02_corpus_ko_seg0746,True,baseline,audio_pred_emotion_aware,happiness,baseline,baseline,tie,tie,..\data_own\segment_audio\02_corpus_ko_seg0746.wav
 annotator_1,annotator_1_048,06_corpus_ko_seg0279,False,baseline,audio_pred_emotion_aware,surprise,tie,tie,tie,tie,..\data_own\segment_audio\06_corpus_ko_seg0279.wav
 annotator_1,annotator_1_049,01_corpus_ko_seg0207,False,audio_pred_emotion_aware,baseline,surprise,audio_pred_emotion_aware,tie,audio_pred_emotion_aware,baseline,..\data_own\segment_audio\01_corpus_ko_seg0207.wav
-annotator_1,annotator_1_050,04_corpus_ko_seg0488,False,baseline,audio_pred_emotion_aware,surprise,baseline,baseline,audio_pred_emotion_aware,tie,..\data_own\segment_audio\04_corpus_ko_seg0488.wav
+annotator_2,annotator_1_050,04_corpus_ko_seg0488,False,baseline,audio_pred_emotion_aware,surprise,baseline,baseline,audio_pred_emotion_aware,tie,..\data_own\segment_audio\04_corpus_ko_seg0488.wav
 annotator_2,annotator_2_001,02_corpus_ko_seg0859,True,baseline,audio_pred_emotion_aware,happiness,audio_pred_emotion_aware,audio_pred_emotion_aware,tie,tie,..\data_own\segment_audio\02_corpus_ko_seg0859.wav
 annotator_2,annotator_2_002,02_corpus_ko_seg0233,True,baseline,audio_pred_emotion_aware,surprise,audio_pred_emotion_aware,tie,audio_pred_emotion_aware,baseline,..\data_own\segment_audio\02_corpus_ko_seg0233.wav
 annotator_2,annotator_2_003,06_corpus_ko_seg0911,False,baseline,audio_pred_emotion_aware,surprise,tie,tie,tie,tie,..\data_own\segment_audio\06_corpus_ko_seg0911.wav
