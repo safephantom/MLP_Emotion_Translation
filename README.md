@@ -82,9 +82,14 @@ MLP_Emotion_Translation/
 
 ### 4.1. Front-End Emotion Classifier (Ablation Study)
 Before feeding predictions into the translation pipeline, we validated the multimodal LSTM emotion classifier. The ablation study proved that incorporating Korean sentence-final endings (EF) alongside raw audio features dramatically reduces emotional ambiguity:
-* **Proposed (Multimodal: Audio + EF)**: Achieved a Hard Accuracy of **59.17%** (Valence Loss: 0.0501, Arousal Loss: 0.0168).
-* **Ablated (Audio-Only baseline)**: Performance dropped to **44.28%** (Valence Loss: 0.0660, Arousal Loss: 0.0203).
+
+| Model Setup | Modality | Hard Accuracy | Valence Loss (MSE) | Arousal Loss (MSE) |
+| :--- | :--- | :---: | :---: | :---: |
+| **Multimodal (Proposed)** | **Audio + EF** | **59.17%** | **0.0501** | **0.0168** |
+| **Audio-Only (Ablated)** | Audio Only (EF Masked) | 44.28% | 0.0660 | 0.0203 |
+
 * **Key Insight**: Excluding grammatical EF weights causes classification accuracy to drop by **~15%p**, validating that EFs act as primary contextual punctuation for emotional resolution in spoken Korean.
+  *(Note: Valence and Arousal loss metrics are evaluated based on Mean Squared Error (MSE).)*
 
 ### 4.2. Downstream Translation Performance
 Our downstream translation evaluations compared the baseline (text-only translation) against the proposed model (audio + EF-informed emotion-aware translation).
