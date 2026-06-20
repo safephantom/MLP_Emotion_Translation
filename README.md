@@ -191,15 +191,15 @@ Beyond literal meaning, emotional information can influence the overall tone of 
 
 **Source (Korean)**
 
-[Example Sentence]
+[뭐야]
 
 **Baseline Translation**
 
-[Translation without emotion information]
+[What is it]
 
 **Emotion-aware Translation**
 
-[Translation with emotion information]
+[What the...?]
 
 **Observation**
 
@@ -211,15 +211,15 @@ Korean sentence-final endings often carry important emotional and interpersonal 
 
 **Source (Korean)**
 
-[Example Sentence]
+[뭐 그런 분들도 계실 텐데]
 
 **Baseline Translation**
 
-[Translation without emotion information]
+[Well, there might be people like that.]
 
 **Emotion-aware Translation**
 
-[Translation with emotion information]
+[Well, there might be people like that too, I suppose.]
 
 **Observation**
 
