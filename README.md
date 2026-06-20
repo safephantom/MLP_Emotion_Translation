@@ -187,7 +187,7 @@ The emotion-aware translation better reflects the speaker's emotional intensity 
 
 ### 2. Tone and Attitude Adjustment
 
-Beyond literal meaning, emotional information can influence the overall tone of an utterance. Emotion-aware translation often selects wording that more accurately conveys the speaker's attitude, such as frustration, excitement, disappointment, or surprise.
+Beyond literal meaning, emotional information can influence the overall tone of an utterance. Emotion-aware translation often selects wording that more accurately conveys the speaker's attitude, such as frustration, excitement, disappointment,or surprise.
 
 **Source (Korean)**
 
